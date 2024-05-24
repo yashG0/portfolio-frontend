@@ -4,3 +4,9 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.active {
+    color: #7689d5; /* Example styling for active link */
+    font-weight: bold;
+  }
+  

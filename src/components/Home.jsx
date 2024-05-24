@@ -26,7 +26,7 @@ const Home = () => {
     <>
       <Header />
       <div className="hero-background w-full min-h-screen relative">
-        <div className="w-full h-screen bg-black/25 flex items-center justify-center">
+        <div className="w-full h-screen bg-black/10 flex items-center justify-center">
 
           {/* MY NAME */}
           <div className="text-4xl font-sans md:text-6xl absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 leading-tight text-left w-[80%] md:w-fit">
@@ -38,7 +38,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div onClick={handleScrollToBottom} className='absolute hover:bg-gray-300/40 cursor-pointer bottom-44'> <FiChevronsDown className='text-white/60' style={{fontSize:'3rem'}} /> </div>
+          <div onClick={handleScrollToBottom} className='rounded-full animate-bounce absolute hover:bg-gray-300/40 cursor-pointer bottom-44'> <FiChevronsDown className='text-white/60' style={{fontSize:'3rem'}} /> </div>
         </div>
 
 

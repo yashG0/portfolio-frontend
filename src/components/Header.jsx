@@ -15,13 +15,14 @@ const Header = () => {
          <nav className="p-4 flex flex-row items-center w-[90%] md:w-[60%] justify-between">
             {/* MY LOGO */}
             <div className="logo">
+
                <img className='w-10 md:w-20 invert' src="/src/assets/y_logo.png" alt="logo" />
             </div>
 
             {/* MY LINKS */}
             <ul className={`${hamburger ? 'block bg-[#111111]/80' : 'hidden'} md:flex md:flex-row md:gap-5 absolute md:static top-[70px] left-0 right-0 md:top-auto md:left-auto md:right-auto bg-[#111111] md:bg-transparent p-4 md:p-0 text-center z-20`}>
                <li className='uppercase cursor-pointer text-lg hover:text-gray-300'>
-                  <NavLink to="/" onClick={hamburgerToggle}>Home</NavLink>
+                  <NavLink to="/" activeClassName="active" onClick={hamburgerToggle}>Home</NavLink>
                </li>
                <li className='uppercase cursor-pointer text-lg hover:text-gray-300'>
                   <NavLink to="/about" onClick={hamburgerToggle}>About</NavLink>
@@ -42,7 +43,7 @@ const Header = () => {
                   </a>
                </li>
                <li className='uppercase cursor-pointer text-4xl'>
-                  <a target='_blank' rel="noopener noreferrer" href="">
+                  <a target='_blank' rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100095157373972">
                      <FaFacebook />
                   </a>
                </li>
