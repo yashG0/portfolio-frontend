@@ -2,6 +2,8 @@ import { FaFacebook, FaGithub, FaHackerrank, FaLinkedin } from 'react-icons/fa';
 import { FiMenu, FiX } from 'react-icons/fi';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from '../assets/y_logo.png'
+
 
 const Header = () => {
    const [hamburger, setHamburger] = useState(false);
@@ -16,7 +18,7 @@ const Header = () => {
             {/* MY LOGO */}
             <div className="logo">
 
-               <img className='w-10 md:w-20 invert' src="/src/assets/y_logo.png" alt="logo" />
+               <img className='w-10 md:w-20 invert' src={logo} alt="logo" />
             </div>
 
             {/* MY LINKS */}
