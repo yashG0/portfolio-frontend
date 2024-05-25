@@ -8,7 +8,7 @@ const Project = () => {
     <>
       <div>
 
-        <div className='text-center text-4xl mt-3 '>My Projects</div>
+        <div className='text-center font-opensans text-4xl mt-3 text-indigo-700 font-medium'>My Projects</div>
 
         {/* MY PROJECTS -> */}
         <div className='grid  p-8  grid-cols-1 gap-5 w-full md:grid-cols-3 place-items-center my-3'>

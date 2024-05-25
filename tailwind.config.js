@@ -12,6 +12,7 @@ module.exports = {
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
+      opensans: ['"Open Sans", sans-serif'],
     },
     container: {
       center: true,
