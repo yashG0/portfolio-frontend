@@ -17,7 +17,6 @@ const Header = () => {
          <nav className="p-4 flex flex-row items-center w-[90%] md:w-[60%] justify-between">
             {/* MY LOGO */}
             <div className="logo">
-
                <img className='w-10 md:w-20 invert' src={logo} alt="logo" />
             </div>
 
