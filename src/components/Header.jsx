@@ -3,7 +3,7 @@ import { FiMenu, FiX } from 'react-icons/fi';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/y_logo.png'
-
+import resumePdf from '../assets/webdev_myresume-1.pdf';
 
 const Header = () => {
    const [hamburger, setHamburger] = useState(false);
@@ -33,7 +33,7 @@ const Header = () => {
                   <NavLink to="/contact" onClick={hamburgerToggle}>Contact</NavLink>
                </li>
                <li className='uppercase cursor-pointer text-lg hover:text-gray-300'>
-                  <a href="src/assets/webdev_myresume-1.pdf" target="_blank" rel="noopener noreferrer" onClick={hamburgerToggle}>My Resume</a>
+                  <a href={resumePdf} target="_blank" rel="noopener noreferrer" onClick={hamburgerToggle}>My Resume</a>
                </li>
             </ul>
 
