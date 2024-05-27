@@ -19,7 +19,7 @@ const Contact = () => {
 
     // Handle form submission
     console.log(formData);
-    fetch("http://127.0.0.1:8000/getformdata/", {
+    fetch("https://yash2004.pythonanywhere.com/getprojectdata/getformdata/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
