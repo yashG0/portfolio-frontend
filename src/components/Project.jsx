@@ -14,8 +14,9 @@ import {
 
 const Project = () => {
   const [projectdata, setProjectData] = useState(null);
+  
   const plugin = useRef(
-    Autoplay({ delay: 1000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true })
   )
 
   useEffect(() => {
