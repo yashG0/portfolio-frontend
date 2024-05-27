@@ -10,6 +10,7 @@ import Contact from './components/Contact.jsx'
 
 
 const router = createBrowserRouter([
+  
   {
     path: '/',
     element: <Home />
