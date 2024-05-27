@@ -19,7 +19,11 @@ const Contact = () => {
 
     // Handle form submission
     console.log(formData);
+<<<<<<< HEAD
     fetch("https://yash2004.pythonanywhere.com/getprojectdata/getformdata/", {
+=======
+    fetch("https://yash2004.pythonanywhere.com/getformdata/", {
+>>>>>>> 465b12e (new changes for backend url)
       method: "POST",
       headers: {
         "Content-Type": "application/json",
