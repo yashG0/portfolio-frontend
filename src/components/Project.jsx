@@ -5,7 +5,7 @@ const Project = () => {
   const [projectdata, setProjectData] = useState(null);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/getprojectdata/')
+    fetch('https://yash2004.pythonanywhere.com/getprojectdata/')
       .then(response => response.json())
       .then(data => setProjectData(data.data))
       .catch(error => console.error('Error fetching data:', error));
