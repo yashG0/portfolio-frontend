@@ -56,8 +56,8 @@ const Project = () => {
               <div className='md:hidden block'>
                 <Carousel>
                   <CarouselContent>
-                    <CarouselItem>
-                      <div key={project.project_name} className="block max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-xl">
+                    <CarouselItem key={project.project_name}>
+                      <div className="block max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-xl">
                         <div>
                           <img className="rounded-t-lg" src={project.project_img_url} alt="project image" />
                         </div>
