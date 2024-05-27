@@ -11,7 +11,7 @@ const Project = () => {
       .catch(error => console.error('Error fetching data:', error));
   }, []);
   console.log(projectdata);
-  
+
 
   return (
     <div>
@@ -20,15 +20,16 @@ const Project = () => {
         {projectdata ? (
           projectdata.map(project => (
             <div key={project.project_name} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-xl">
-              <a href="#">
+              <div >
                 <img className="rounded-t-lg" src={project.project_img_url} alt="project image" />
-              </a>
+              </div>
+
               <div className="p-5">
                 <a href="#">
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{project.project_name}</h5>
                 </a>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 h-[150px] overflow-y-auto">{project.project_description}</p>
-                <a href={project.project_source_code} className="inline-flex items-center font-medium text-center text-white ">
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 h-[139px] overflow-y-hidden">{project.project_description}</p>
+                <a href={project.project_source_code} target='_blank' className="inline-flex items-center font-medium text-center text-white ">
                   <Button>
                     Read more
                     <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

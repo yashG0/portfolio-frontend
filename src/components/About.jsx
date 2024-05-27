@@ -7,7 +7,7 @@ const About = () => {
 
   return (
     <>
-      <div className="absolute top-0 -z-10 h-full w-full bg-white"><div class="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[#81b3e2] opacity-50 blur-[80px]"></div></div>
+      <div className="absolute top-0 -z-10 h-full w-full bg-white"><div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[#81b3e2] opacity-50 blur-[80px]"></div></div>
 
       <div className='max-h-screen'>
 
