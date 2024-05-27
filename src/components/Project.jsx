@@ -64,7 +64,7 @@ const Project = () => {
         )}
 
         {/* Mobile view */}
-        <div className='md:hidden block h-screen'>
+        <div className='md:hidden block'>
           <Carousel plugins={[plugin.current]} onMouseEnter={plugin.current.stop} onMouseLeave={plugin.current.reset}>
             <CarouselContent>
               {projectdata && projectdata.map(project => (
