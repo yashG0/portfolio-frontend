@@ -31,7 +31,7 @@ const Project = () => {
 
   return (
     <div>
-      <div className='text-center font-opensans text-4xl mt-3 text-indigo-700 font-medium'>My Projects</div>
+      <div className='h-screen text-center font-opensans text-4xl mt-3 text-indigo-700 font-medium'>My Projects</div>
       <div className='grid p-8 grid-cols-1 gap-5 w-full md:grid-cols-3 place-items-center my-3'>
         {projectdata ? (
           projectdata.map(project => (
