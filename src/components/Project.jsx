@@ -5,6 +5,7 @@ const Project = () => {
   const [projectdata, setProjectData] = useState(null);
 
   useEffect(() => {
+    
     fetch('https://yash2004.pythonanywhere.com/getprojectdata/')
       .then(response => response.json())
       .then(data => setProjectData(data.data))
