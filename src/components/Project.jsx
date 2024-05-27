@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button } from './ui/button';
 import bg1 from '../assets/bg1.jpg'
+import Autoplay from "embla-carousel-autoplay"
+
 import {
   Carousel,
   CarouselContent,
@@ -12,6 +14,9 @@ import {
 
 const Project = () => {
   const [projectdata, setProjectData] = useState(null);
+  const plugin = useRef(
+    Autoplay({ delay: 1000, stopOnInteraction: true })
+  )
 
   useEffect(() => {
 
@@ -59,7 +64,7 @@ const Project = () => {
 
         {/* Mobile view */}
         <div className='md:hidden block'>
-          <Carousel>
+          <Carousel plugins={[plugin.current]} onMouseEnter={plugin.current.stop} onMouseLeave={plugin.current.reset}>
             <CarouselContent>
               {projectdata && projectdata.map(project => (
                 <CarouselItem key={project.project_name}>
@@ -85,8 +90,8 @@ const Project = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            {/* <CarouselPrevious /> */}
+            {/* <CarouselNext /> */}
           </Carousel>
         </div>
 
