@@ -26,7 +26,7 @@ const Project = () => {
       .then(data => setProjectData(data.data))
       .catch(error => console.error('Error fetching data:', error));
   }, []);
-  console.log(projectdata);
+  console.log(JSON.stringify(projectdata));
 
 
   return (
