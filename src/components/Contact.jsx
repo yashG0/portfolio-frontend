@@ -21,9 +21,7 @@ const Contact = () => {
     console.log(JSON.stringify(formData));
     fetch("https://portfolio-backend-2-production.up.railway.app/api/form/", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      
       body: JSON.stringify(formData),
     })
       .then(response => {
