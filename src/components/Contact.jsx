@@ -18,7 +18,7 @@ const Contact = () => {
     const formData = { name, email, message };
 
     // Handle form submission
-    console.log(formData);
+    console.log(JSON.stringify(formData));
     fetch("https://portfolio-backend-2-production.up.railway.app/api/form/", {
       method: "POST",
       headers: {
