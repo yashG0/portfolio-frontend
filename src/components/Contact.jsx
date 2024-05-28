@@ -15,11 +15,11 @@ const Contact = () => {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    const formData = { name, email, message };
+    const formData = { username:name, email:email, message:message };
 
     // Handle form submission
     console.log(JSON.stringify(formData));
-    fetch("https://portfolio-backend-2-production.up.railway.app/api/form/", {
+    fetch("https://portfolio-backend-2-production.up.railway.app/api/form", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

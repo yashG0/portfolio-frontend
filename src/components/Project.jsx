@@ -21,7 +21,7 @@ const Project = () => {
 
   useEffect(() => {
 
-    fetch('https://portfolio-backend-2-production.up.railway.app/api/project/')
+    fetch('https://portfolio-backend-2-production.up.railway.app/api/project')
       .then(response => response.json())
       .then(data => setProjectData(data.data))
       .catch(error => console.error('Error fetching data:', error));
