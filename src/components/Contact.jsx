@@ -18,8 +18,8 @@ const Contact = () => {
     const formData = { name, email, message };
 
     // Handle form submission
-    console.log(formData);
-    fetch("https://yash2004.pythonanywhere.com/getformdata/", {
+    // console.log(formData);
+    fetch("https://portfolio-backend-2-production.up.railway.app/api/form/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

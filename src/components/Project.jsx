@@ -14,14 +14,14 @@ import {
 
 const Project = () => {
   const [projectdata, setProjectData] = useState(null);
-  
+
   const plugin = useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   )
 
   useEffect(() => {
 
-    fetch('https://yash2004.pythonanywhere.com/getprojectdata/')
+    fetch('https://portfolio-backend-2-production.up.railway.app/api/project/')
       .then(response => response.json())
       .then(data => setProjectData(data.data))
       .catch(error => console.error('Error fetching data:', error));
